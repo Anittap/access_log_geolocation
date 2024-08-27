@@ -2,6 +2,8 @@ import logparser
 
 import ipgeolocation
 
+ipcounter = {}
+
 for logline in open('apache_logs','r'):
 
     logdetails = logparser.parser(logline)
